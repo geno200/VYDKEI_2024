@@ -1,0 +1,61 @@
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+
+.dropdown-container a:hover {
+    color: cadetblue;
+}
+
+.dropdown-btn.active+.dropdown-container {
+    max-height: 300px;
+    height: auto;
+}
+
+
+.active {
+    background-color: rgba(144, 193, 172, 0.7);
+    color: white;
+}
+
+.dropdown-container {
+    max-height: 0;
+    overflow: hidden;
+    height: 0;
+    transition: max-height 0.3s ease-in-out
+    , height 0.5s ease-in-out;
+    padding-left: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transform-origin: top;
+}
+
+
+
+.fa-caret-down {
+    float:right;
+    padding-right: 6px;
+}
+
+
+.nav-pills li a:hover {
+    background-color: rgba(98, 158, 138, 0.377);
+}
